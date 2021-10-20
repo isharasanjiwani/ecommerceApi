@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Review extends Model
 {
     use HasFactory;
+    public $fillable = [
+        'product_id',
+        'review',
+        'star'
+    ];
 }
